@@ -1,0 +1,46 @@
+{
+  "name": "buble-chat",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/node": "16.18.35",
+    "@types/react": "18.2.11",
+    "@types/react-dom": "18.2.4",
+    "clean-webpack-plugin": "^4.0.0",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.config.js --mode development",
+    "build:staging": "webpack --config webpack.config.js --mode development",
+    "build:production": "rimraf dist/production && webpack --config webpack.config.js --mode production"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.26",
+    "html-webpack-plugin": "^5.5.2",
+    "styled-components": "^5.3.10",
+    "webpack": "^5.86.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-md5-hash": "^0.0.6"
+  }
+}
